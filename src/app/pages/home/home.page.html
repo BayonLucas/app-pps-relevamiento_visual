@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-title>Menú</ion-title>
+      <ion-buttons slot="end">
+        <ion-img class="icon-back" src="../../../assets/icon/grafico.png" name="logout" (click)="goTo('/estadisticas')"></ion-img>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-img class="icon-back" src="../../../assets/icon/userGallery.png" name="logout" (click)="goTo('/fotos-del-usuario')"></ion-img>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-img class="icon-back" src="../../../assets/icon/apagar.png" name="logout" (click)="cerrarSesion()"></ion-img>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col size="12">
+      <ion-button color="success" expand="full" size="large" (click)="goTo('/cosas-lindas')">
+        <ion-row>
+          <ion-img src="../../../assets/botones/comprobado.png"></ion-img>
+        </ion-row>
+        <ion-row>
+          Cosas Lindas
+        </ion-row>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button color="secondary" expand="block" size="large" (click)="goTo('/cosas-feas')">
+        Cosas Feas
+        <ion-img src="../../../assets/botones/cancelar.png"></ion-img>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
